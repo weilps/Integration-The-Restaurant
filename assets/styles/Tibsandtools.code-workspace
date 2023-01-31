@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "../../../../../Tibsandtools"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Tibsandtools",
+    "liveServer.settings.port": 5501
+  }
+}

@@ -41,7 +41,7 @@
       <div class="nav-container">
         <nav>
           <h3>Resto</h3>
-          <ul>
+          <ul id="menu">
             <li><a href="#">Home</a></li>
             <li><a href="#">Reservations</a></li>
             <li><a href="#">Menu</a></li>
@@ -50,24 +50,28 @@
             <li><a href="#">Shop</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-          <ul>
-            <li>
-              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            </li>
-            <li>
-              <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            </li>
-          </ul>
+          <div class="socials">
+            <ul id="socials">
+              <li>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
       <div class="title-container">
         <div class="title">
-          <h2>Welcome to</h2>
-          <h1>The Resto</h1>
-          <div class="icon"></div>
+          <h1>Welcome to</h1>
+          <h2>The Resto</h2>
+          <div class="icon">
+            <img src="./assets/img/ic-plate-big.png" alt="icon-restaurant" />
+          </div>
           <span>We serve only the freshest ingredients</span>
         </div>
       </div>
@@ -88,7 +92,9 @@
                 reprehenderit, facere repudiandae veniam aspernatur fuga sint
                 cupiditate nesciunt nisi impedit quam!
               </p>
-              <div class="avatar-01"></div>
+              <div class="avatar-01">
+                <img src="./assets/img/avatar-01.jpg" alt="chef-cook" />
+              </div>
               <span>Russel Stephens</span>
               <span>Chef Cook</span>
             </div>
@@ -114,7 +120,12 @@
           <div class="menu-grid">
             <div class="meal-container">
               <div class="meal">
-                <div class="meal-img01"></div>
+                <div class="meal-img01">
+                  <img
+                    src="./assets/img/dish-item-01.jpg"
+                    alt="italian-source-mushroom"
+                  />
+                </div>
                 <div class="meal-description">
                   <span>Italian source mushroom</span>
                   <span>Mushroom / Garlic / Veggies</span>
@@ -127,7 +138,9 @@
           </div>
           <div class="meal-container">
             <div class="meal">
-              <div class="meal-img02"></div>
+              <div class="meal-img02">
+                <img src="./assets/img/dish-item-02.jpg" alt="fried-potatoes" />
+              </div>
               <div class="meal-description">
                 <span>Fried potatoes with garlic</span>
                 <span>Potatoes / Olive Oil / Garlic</span>
@@ -139,7 +152,12 @@
           </div>
           <div class="meal-container">
             <div class="meal">
-              <div class="meal-img03"></div>
+              <div class="meal-img03">
+                <img
+                  src="./assets/img/dish-item-03.jpg"
+                  alt="tenu-roast-source"
+                />
+              </div>
               <div class="meal-description">
                 <span>Tenu roast source</span>
                 <span>Tuna / Potatoes / Rice</span>
@@ -151,9 +169,11 @@
           </div>
           <div class="meal-container">
             <div class="meal">
-              <div class="meal-img04"></div>
+              <div class="meal-img04">
+                <img src="./assets/img/dish-item-04.jpg" alt="roast-pork" />
+              </div>
               <div class="meal-description">
-                <span>Roas pork (4 sticks)</span>
+                <span>Roast pork (4 sticks)</span>
                 <span>Pork / Veggies / Shoyu</span>
               </div>
               <div class="price">
@@ -163,7 +183,12 @@
           </div>
           <div class="meal-container">
             <div class="meal">
-              <div class="meal-img05"></div>
+              <div class="meal-img05">
+                <img
+                  src="./assets/img/dish-item-05.jpg"
+                  alt="salted-fried-chicken"
+                />
+              </div>
               <div class="meal-description">
                 <span>Salted fried chicken</span>
                 <span>Chicken / Olive Oil / Salt</span>
@@ -175,7 +200,12 @@
           </div>
           <div class="meal-container">
             <div class="meal">
-              <div class="meal-img06"></div>
+              <div class="meal-img06">
+                <img
+                  src="./assets/img/dish-item-06.jpg"
+                  alt="crab-with-curry"
+                />
+              </div>
               <div class="meal-description">
                 <span>Crab with curry sources</span>
                 <span>Crab / Potatoes / Rice</span>
@@ -187,7 +217,9 @@
           </div>
           <div class="meal-container">
             <div class="meal">
-              <div class="meal-img07"></div>
+              <div class="meal-img07">
+                <img src="./assets/img/dish-item-07.jpg" alt="salmon-steak" />
+              </div>
               <div class="meal-description">
                 <span>Imported salmon steak</span>
                 <span>Salmon / Veggies / Oil</span>
@@ -199,7 +231,12 @@
           </div>
           <div class="meal-container">
             <div class="meal">
-              <div class="meal-img08"></div>
+              <div class="meal-img08">
+                <img
+                  src="./assets/img/dish-item-08.jpg"
+                  alt="baked-potato-pizza"
+                />
+              </div>
               <div class="meal-description">
                 <span>Backed potato pizza</span>
                 <span>Potato / Bread / Cheese</span>
@@ -286,57 +323,37 @@
             </div>
           </div>
           <div class="events-list">
-            <div class="event">
-              <div class="event-left">
-                <div class="event-date">
-                  <span>08</span>
-                  <p>July</p>
-                </div>
-              </div>
-              <div class="event-right">
-                <div class="event-right-content">
-                  <span>Night Inspirescu Party</span>
-                  <p>
-                    <i class="fa-solid fa-location-dot"></i>Restaurant Resto<i
-                      class="fa-regular fa-clock"
-                    ></i
-                    >10:00pm - 6:00am
-                  </p>
-                  <a href="#">Buy tickets</a>
-                </div>
-              </div>
-            </div>
-            <div class="event">
-              <div class="event-left">
-                <div class="event-date">
-                  <span>08</span>
-                  <p>July</p>
-                </div>
-              </div>
-              <div class="event-right">
-                <div class="event-right-content">
-                  <span>DJ RobagRuhme</span>
-                  <p>
-                    <i class="fa-solid fa-location-dot"></i>Restaurant Resto<i
-                      class="fa-regular fa-clock"
-                    ></i
-                    >10:00pm - 6:00am
-                  </p>
-                  <a href="#">Buy tickets</a>
-                </div>
-              </div>
-            </div>
-            <div class="event-big">
-              <div class="event-big-container">
-                <div class="event-date-container">
+            <div class="list-event-left">
+              <div class="event">
+                <div class="event-left">
                   <div class="event-date">
                     <span>08</span>
                     <p>July</p>
                   </div>
                 </div>
-                <div class="event-content-container">
-                  <div class="event-content">
-                    <span>Thousands celebrities at Johnnie Night</span>
+                <div class="event-right">
+                  <div class="event-right-content">
+                    <span>Night Inspirescu Party</span>
+                    <p>
+                      <i class="fa-solid fa-location-dot"></i>Restaurant Resto<i
+                        class="fa-regular fa-clock"
+                      ></i
+                      >10:00pm - 6:00am
+                    </p>
+                    <a href="#">Buy tickets</a>
+                  </div>
+                </div>
+              </div>
+              <div class="event">
+                <div class="event-left">
+                  <div class="event-date">
+                    <span>08</span>
+                    <p>July</p>
+                  </div>
+                </div>
+                <div class="event-right">
+                  <div class="event-right-content">
+                    <span>DJ RobagRuhme</span>
                     <p>
                       <i class="fa-solid fa-location-dot"></i>Restaurant Resto<i
                         class="fa-regular fa-clock"
@@ -348,11 +365,34 @@
                 </div>
               </div>
             </div>
+            <div class="list-event-right">
+              <div class="event-big">
+                <div class="event-big-container">
+                  <div class="event-date-container">
+                    <div class="event-date">
+                      <span>08</span>
+                      <p>July</p>
+                    </div>
+                  </div>
+                  <div class="event-content-container">
+                    <div class="event-content">
+                      <span>Thousands celebrities at Johnnie Night</span>
+                      <p>
+                        <i class="fa-solid fa-location-dot"></i>Restaurant
+                        Resto<i class="fa-regular fa-clock"></i>10:00pm - 6:00am
+                      </p>
+                      <a href="#">Buy tickets</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="ceo">
         <div class="ceo-container">
+          <img src="./assets/img/avatar-02.jpg" alt="ceo-picture" />
           <div class="ceo-content">
             <p>
               <i class="fa-solid fa-quote-left"></i>Lorem ipsum dolor sit amet,

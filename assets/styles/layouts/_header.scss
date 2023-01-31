@@ -1,9 +1,78 @@
 header {
   height: 100vh;
-  background: url(../../img/bg-menu-01.jpg) center/cover;
+  background: url(./../img/bg-slider-06.jpg) center/cover;
   .nav-container {
+    width: 100%;
+    height: 100px;
+    @include center-unique-child;
     nav {
-      color: $font-light;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      max-width: 1240px;
+      h3 {
+        color: $color-bg-light;
+        width: 15%;
+        font-size: 2rem;
+      }
+      ul {
+        display: flex;
+        justify-content: space-between;
+
+        font-size: 0.7rem;
+      }
+      #menu {
+        width: 60%;
+      }
+      .socials {
+        width: 15%;
+        @include center-unique-child;
+        #socials {
+          width: 100%;
+          max-width: 70px;
+          a,
+          a:visited {
+            &:hover {
+              transform: scale(1.3);
+            }
+          }
+        }
+      }
+      a,
+      a:visited {
+        text-transform: uppercase;
+        color: $color-bg-light;
+        display: flex;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  .title-container {
+    @include center-unique-child;
+    margin-top: 10vh;
+    .title {
+      h2 {
+        margin: -15px 0 50px;
+        color: $color-font-light;
+        font-size: 2.5rem;
+        letter-spacing: 6px;
+      }
+      .icon {
+        @include center-unique-child;
+        margin-bottom: 50px;
+        img {
+          height: 25px;
+        }
+      }
+      span {
+        letter-spacing: 6px;
+        font-size: 1rem;
+        color: $color-font-light;
+      }
     }
   }
 }
